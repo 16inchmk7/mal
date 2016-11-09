@@ -1,0 +1,131 @@
+/**
+ * Author: arthas 206115540
+ * Date: 2014-09-02
+ * Version: 1.1
+ * Desc: Irohikari themed responsive stylesheet
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Sirin+Stencil);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+html {height: 100%; font-size: 62.5%;}
+html, body {width: 100%;}
+body {font-size: 1.1rem; background: #fff; font-family: 'Sirin Stencil', Helvetica, Arial;}
+
+img {max-width: 100%; height: auto;}
+a {color: #222; text-decoration: none;}
+
+#mal_control_strip {position: fixed !important; top: 0; opacity: 0.8; z-index: 20;}
+#mal_cs_powered {position: fixed !important; z-index: 20;}
+#search {position: fixed !important; z-index: 20;}
+
+#list_surround {margin-top: 4rem; padding: 0 4rem 0 56rem;}
+#list_surround::after {content: ''; display: table; clear: both;}
+
+#list_surround br:first-child + table {position: fixed; left: 4rem; top: 50%; transform: translateY(-50%); width: auto; z-index: 5;}
+#list_surround br:first-child + table a {position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: transparent; opacity: 0;}
+#list_surround br:first-child + table tr {display: block; perspective: 500px;}
+#list_surround br:first-child + table td.status_selected, #list_surround br:first-child + table td.status_not_selected {display: inline-block; width: 82px; height: 330px; border: 0; position: relative; z-index: 0; opacity: .4; transition: opacity .4s ease, transform .4s ease;}
+#list_surround br:first-child + table td:first-child {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-shinku_zpsec682b0c.png') no-repeat; background-size: cover; transform: rotateY(30deg);}
+#list_surround br:first-child + table td:nth-child(2) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kana_zps1a23199f.png') no-repeat; background-size: cover; transform: translateZ(-30px) rotateY(20deg);}
+#list_surround br:first-child + table td:nth-child(3) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-mio_zps05b8f4d6.png') no-repeat; background-size: cover; transform: translateZ(-60px) rotateY(10deg);}
+#list_surround br:first-child + table td:nth-child(4) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kyo_zpsf65c3c19.png') no-repeat; background-size: cover; transform: translateZ(-60px) rotateY(-10deg);}
+#list_surround br:first-child + table td:nth-child(5) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-tsukasa_zps5a69d022.png') no-repeat; background-size: cover; transform: translateZ(-30px) rotateY(-20deg);}
+#list_surround br:first-child + table td:nth-child(6) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-ai_zpse58b0778.png') no-repeat; background-size: cover; transform: rotateY(-30deg);}
+#list_surround br:first-child + table td.status_selected {opacity: 1; z-index: 1;}
+#list_surround br:first-child + table td:hover {opacity: 1; transform: translateZ(60px); z-index: 2; transition: opacity .4s ease, transform .4s ease;}
+
+.header_title {display: block; font-family: 'Indie Flower'; position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 4rem; letter-spacing: 1rem;}
+.header_cw {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shinku_zps7da8bf88.png') right center no-repeat; display: block; width: 100%; height: 111px; position: relative;}
+.header_completed {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/kana_zpse187aa9b.png') right center no-repeat; display: block; width: 100%; height: 133px; position: relative;}
+.header_onhold {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/mio_zps7b19e5ed.png') right center no-repeat; display: block; width: 100%; height: 125px; position: relative;}
+.header_dropped {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/kyo_zpsa3262437.png') right center no-repeat; display: block; width: 100%; height: 130px; position: relative;}
+.header_ptw {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/tsukasa_zps7dcbdf42.png') right center no-repeat; display: block; width: 100%; height: 127px; position: relative;}
+
+#list_surround table, #list_surround .hide {position: relative;}
+#list_surround table + br {display: none;}
+#list_surround table::before, #list_surround .hide::before {content: ''; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-attachment: fixed; background-position: 105rem 14rem; z-index: -1; opacity: .1; pointer-events: none;}
+#list_surround table.header_cw ~ .hide::before, #list_surround table.header_cw ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-shinku_zpsec682b0c.png');}
+#list_surround table.header_completed ~ .hide::before, #list_surround table.header_completed ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kana_zps1a23199f.png');}
+#list_surround table.header_onhold ~ .hide::before, #list_surround table.header_onhold ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-mio_zps05b8f4d6.png');}
+#list_surround table.header_dropped ~ .hide::before, #list_surround table.header_dropped ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kyo_zpsf65c3c19.png');}
+#list_surround table.header_ptw ~ .hide::before, #list_surround table.header_ptw ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-tsukasa_zps5a69d022.png');}
+
+#list_surround table.header_cw::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-shinku_zpsec682b0c.png') !important;}
+#list_surround table.header_completed::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kana_zps1a23199f.png') !important;}
+#list_surround table.header_onhold::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-mio_zps05b8f4d6.png') !important;}
+#list_surround table.header_dropped::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kyo_zpsf65c3c19.png') !important;}
+#list_surround table.header_ptw::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-tsukasa_zps5a69d022.png') !important;}
+
+.table_header, .td1, .td2 {padding: .3rem 0; position: relative; transition: background 1s ease;}
+.td1:nth-child(2), .td2:nth-child(2) {padding-right: 5rem;}
+.td1:nth-child(2) div, .td2:nth-child(2) div {float: none !important; position: absolute; right: 0; top: 50%; transform: translateY(-50%); opacity: 0; transition: opacity 1s ease;}
+.td1:nth-child(2):hover div, .td2:nth-child(2):hover div {opacity: 1;  transition: opacity .4s ease;}
+tr:hover .td1, tr:hover .td2 {background: rgba(220,220,220,.2); transition: background .3s ease;}
+div.hide {padding: .5rem 3rem;}
+.category_totals {padding: .5rem 0;}
+
+a.animetitle {position: relative; z-index: 10; display: inline-block;}
+a.animetitle span {display: inline-block; position: relative;}
+a.animetitle span::first-letter {font-family: 'Indie Flower'; font-weight: bold; font-size: 1.8em; margin-right: .5rem; color: #fff; text-shadow: 0 0 .1rem #000, 0 0 .1rem #000, 0 0 .1rem #000, 0 0 .1rem #000, 0 0 .1rem #000, 0 0 .1rem #000;}
+a.animetitle span::after {content: ''; position: absolute; left: 0; right: 100%; top: 100%; height: 1px; background: #222; transition: all .5s ease;}
+a.animetitle:hover span::after {right: 0;}
+a.animetitle + small {color: #f00; background: #fee; display: inline-block; padding: .2rem 1.5rem; transform: rotateZ(-25deg); border: .1rem solid #f00; border-radius: .4rem; font-family: 'Indie Flower'; font-size: 1.4rem; margin-left: -2rem; font-weight: bold;}
+@keyframes glow {
+    0%   {color: #ff3333; text-shadow: 0 0 8px #ee5500;}
+	50%  {color: #383838; text-shadow: none;}
+	100% {color: #ff3333; text-shadow: 0 0 8px #ee5500;}
+}
+
+#copyright {padding: .5rem 0 1rem;}
+
+@media only screen and (max-width: 950px) {
+	#list_surround {margin-top: 4rem; padding: 0 3rem 0 40rem;}
+	
+	#list_surround br:first-child + table td:first-child,
+	#list_surround br:first-child + table td:nth-child(2),
+	#list_surround br:first-child + table td:nth-child(3),
+	#list_surround br:first-child + table td:nth-child(4),
+	#list_surround br:first-child + table td:nth-child(5),
+	#list_surround br:first-child + table td:nth-child(6) {width: 55px; height: 220px;}
+}
+
+@media only screen and (max-width: 600px) {
+	#mal_control_strip {position: relative !important; opacity: 1; background: #000 !important; display: block;}
+	#mal_control_strip tbody, #mal_control_strip tbody tr {display: block; width: 100%;}
+	#mal_cs_powered {position: relative !important; vertical-align: middle !important; padding: 0 1rem !important;}
+	#search {position: relative !important;}
+	#mal_cs_powered #search #searchBox {max-width: 100%;}
+	
+	#list_surround {margin: 0 auto; padding: 0; width: 90%;}
+	
+	#list_surround br:first-child + table {position: relative; left: 0; top: 0; transform: translateY(0); width: 100%; display: block; margin: 0 auto;}
+	#list_surround br:first-child + table tbody, #list_surround br:first-child + table tr {width: 100%; text-align: center; display: block;}
+	#list_surround br:first-child + table td.status_selected, #list_surround br:first-child + table td.status_not_selected {transform: none;}
+}
+
+
+/**
+ * special titles
+ */
+ 
+a.animetitle[href*="/anime/5909/"] {padding: 30px 0;}
+a.animetitle[href*="/anime/5909/"]::after {content: ''; display: block; position: absolute; left: 20rem; top: 0; height: 100%; width: 30rem; background: url('http://i309.photobucket.com/albums/kk380/206115540/mafuyu-transparent_zpsb1fd24af.png') left center no-repeat; background-size: contain; z-index: -1; pointer-events: none;}
+a.animetitle[href*="/anime/169/"] {color: transparent; pointer-events: none;}
+a.animetitle[href*="/anime/169/"] span {text-decoration: line-through;}
+a.animetitle[href*="/anime/169/"] span::first-letter {color: transparent; text-shadow: none;}
+a.animetitle[href*="/anime/11981/"]::after {content: ''; display: block; position: absolute; left: 12rem; top: -6rem; bottom: 0; width: 30rem; background: url('http://i309.photobucket.com/albums/kk380/206115540/kyosaya-transparent_zps0c08aaca.png') left center no-repeat; background-size: contain; z-index: -1; opacity: .4; pointer-events: none;}
+a.animetitle[href*="/anime/5671/"]::after {content: ''; display: block; position: absolute; left: 17rem; top: 0; bottom: -10rem; width: 50rem; background: url('http://i309.photobucket.com/albums/kk380/206115540/saki19_zps7ee6de52.png') left center no-repeat; background-size: contain; z-index: -1; pointer-events: none;}
+a.animetitle[href*="/anime/934/"]::after,
+a.animetitle[href*="/anime/1889/"]::after,
+a.animetitle[href*="/anime/3652/"]::after,
+a.animetitle[href*="/anime/2899/"]::after {content: 'Na'; display: block; color: #f00; position: absolute; top: 7px; left: 67px; text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;}
+a.animetitle[href*="/anime/4896/"]::after {content: 'Na'; display: block; color: #f00; position: absolute; top: 7px; left: 65px; text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;}
+a.animetitle[href*="/anime/9253/"] {padding: 1rem 0;}
+a.animetitle[href*="/anime/9253/"]::after {content: ''; display: block; position: absolute; left: 37rem; top: -1rem; bottom: -8rem; width: 30rem; background: url('http://i309.photobucket.com/albums/kk380/206115540/kurisu-transparent_zps80319be7.png') left center no-repeat; background-size: contain; z-index: -1; pointer-events: none;}
+a.animetitle[href*="/anime/10087/"] {padding: 1.5rem 0;}
+a.animetitle[href*="/anime/10087/"]::after {content: ''; display: block; position: absolute; left: 25rem; top: -1rem; bottom: -4rem; width: 20rem; background: url('http://i309.photobucket.com/albums/kk380/206115540/fz-transparent_zps9a602557.png') left center no-repeat; background-size: contain; z-index: -1; pointer-events: none;}
+a.animetitle[href*="/anime/18277/"]::after {content: 'IIE SENPAI'; display: inline-block; margin-left: 3rem; font-family: 'Indie Flower'; font-size: 3rem;}
+a.animetitle[href*="/anime/18277/"] span {text-decoration: line-through;}
+/*a.animetitle[href*="/anime/4654/"]::after {content: 'SoGeBu'; display: inline-block; font-family: 'Indie Flower'; font-size: 3rem; position: absolute; top: -6rem; left: 9rem; padding: .2rem 3rem; white-space: nowrap; color: #f33; border: .3rem solid #f33; font-weight: bold; border-radius: 1rem; transform: rotateZ(-25deg); text-shadow: 0 0 .3rem #f88; box-shadow: 0 0 .5rem #f33; background: rgba(255,200,200,.2); pointer-events: none; z-index: -1;}*/
