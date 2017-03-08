@@ -27,36 +27,36 @@ a {color: #222; text-decoration: none;}
 #list_surround br:first-child + table a {position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: transparent; opacity: 0;}
 #list_surround br:first-child + table tr {display: block; perspective: 500px;}
 #list_surround br:first-child + table td.status_selected, #list_surround br:first-child + table td.status_not_selected {display: inline-block; width: 82px; height: 330px; border: 0; position: relative; z-index: 0; opacity: .4; transition: opacity .4s ease, transform .4s ease;}
-#list_surround br:first-child + table td:first-child {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-shinku_zpsec682b0c.png') no-repeat; background-size: cover; transform: rotateY(30deg);}
-#list_surround br:first-child + table td:nth-child(2) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kana_zps1a23199f.png') no-repeat; background-size: cover; transform: translateZ(-30px) rotateY(20deg);}
-#list_surround br:first-child + table td:nth-child(3) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-mio_zps05b8f4d6.png') no-repeat; background-size: cover; transform: translateZ(-60px) rotateY(10deg);}
-#list_surround br:first-child + table td:nth-child(4) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kyo_zpsf65c3c19.png') no-repeat; background-size: cover; transform: translateZ(-60px) rotateY(-10deg);}
-#list_surround br:first-child + table td:nth-child(5) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-tsukasa_zps5a69d022.png') no-repeat; background-size: cover; transform: translateZ(-30px) rotateY(-20deg);}
-#list_surround br:first-child + table td:nth-child(6) {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-ai_zpse58b0778.png') no-repeat; background-size: cover; transform: rotateY(-30deg);}
+#list_surround br:first-child + table td:first-child {background: url('images/shiori-shinku.png') no-repeat; background-size: cover; transform: rotateY(30deg);}
+#list_surround br:first-child + table td:nth-child(2) {background: url('images/shiori-kana.png') no-repeat; background-size: cover; transform: translateZ(-30px) rotateY(20deg);}
+#list_surround br:first-child + table td:nth-child(3) {background: url('images/shiori-mio.png') no-repeat; background-size: cover; transform: translateZ(-60px) rotateY(10deg);}
+#list_surround br:first-child + table td:nth-child(4) {background: url('images/shiori-kyo.png') no-repeat; background-size: cover; transform: translateZ(-60px) rotateY(-10deg);}
+#list_surround br:first-child + table td:nth-child(5) {background: url('images/shiori-tsukasa.png') no-repeat; background-size: cover; transform: translateZ(-30px) rotateY(-20deg);}
+#list_surround br:first-child + table td:nth-child(6) {background: url('images/shiori-ai.png') no-repeat; background-size: cover; transform: rotateY(-30deg);}
 #list_surround br:first-child + table td.status_selected {opacity: 1; z-index: 1;}
 #list_surround br:first-child + table td:hover {opacity: 1; transform: translateZ(60px); z-index: 2; transition: opacity .4s ease, transform .4s ease;}
 
 .header_title {display: block; font-family: 'Indie Flower'; position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 4rem; letter-spacing: 1rem;}
-.header_cw {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shinku_zps7da8bf88.png') right center no-repeat; display: block; width: 100%; height: 111px; position: relative;}
-.header_completed {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/kana_zpse187aa9b.png') right center no-repeat; display: block; width: 100%; height: 133px; position: relative;}
-.header_onhold {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/mio_zps7b19e5ed.png') right center no-repeat; display: block; width: 100%; height: 125px; position: relative;}
-.header_dropped {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/kyo_zpsa3262437.png') right center no-repeat; display: block; width: 100%; height: 130px; position: relative;}
-.header_ptw {background: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/tsukasa_zps7dcbdf42.png') right center no-repeat; display: block; width: 100%; height: 127px; position: relative;}
+.header_cw {background: url('images/shinku.png') right center no-repeat; display: block; width: 100%; height: 111px; position: relative;}
+.header_completed {background: url('images/kana.png') right center no-repeat; display: block; width: 100%; height: 133px; position: relative;}
+.header_onhold {background: url('images/mio.png') right center no-repeat; display: block; width: 100%; height: 125px; position: relative;}
+.header_dropped {background: url('images/kyo.png') right center no-repeat; display: block; width: 100%; height: 130px; position: relative;}
+.header_ptw {background: url('images/tsukasa.png') right center no-repeat; display: block; width: 100%; height: 127px; position: relative;}
 
 #list_surround table, #list_surround .hide {position: relative;}
 #list_surround table + br {display: none;}
 #list_surround table::before, #list_surround .hide::before {content: ''; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-attachment: fixed; background-position: 105rem 14rem; z-index: -1; opacity: .1; pointer-events: none;}
-#list_surround table.header_cw ~ .hide::before, #list_surround table.header_cw ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-shinku_zpsec682b0c.png');}
-#list_surround table.header_completed ~ .hide::before, #list_surround table.header_completed ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kana_zps1a23199f.png');}
-#list_surround table.header_onhold ~ .hide::before, #list_surround table.header_onhold ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-mio_zps05b8f4d6.png');}
-#list_surround table.header_dropped ~ .hide::before, #list_surround table.header_dropped ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kyo_zpsf65c3c19.png');}
-#list_surround table.header_ptw ~ .hide::before, #list_surround table.header_ptw ~ table::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-tsukasa_zps5a69d022.png');}
+#list_surround table.header_cw ~ .hide::before, #list_surround table.header_cw ~ table::before {background-image: url('images/shiori-shinku.png');}
+#list_surround table.header_completed ~ .hide::before, #list_surround table.header_completed ~ table::before {background-image: url('images/shiori-kana.png');}
+#list_surround table.header_onhold ~ .hide::before, #list_surround table.header_onhold ~ table::before {background-image: url('images/shiori-mio.png');}
+#list_surround table.header_dropped ~ .hide::before, #list_surround table.header_dropped ~ table::before {background-image: url('images/shiori-kyo.png');}
+#list_surround table.header_ptw ~ .hide::before, #list_surround table.header_ptw ~ table::before {background-image: url('images/shiori-tsukasa.png');}
 
-#list_surround table.header_cw::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-shinku_zpsec682b0c.png') !important;}
-#list_surround table.header_completed::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kana_zps1a23199f.png') !important;}
-#list_surround table.header_onhold::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-mio_zps05b8f4d6.png') !important;}
-#list_surround table.header_dropped::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-kyo_zpsf65c3c19.png') !important;}
-#list_surround table.header_ptw::before {background-image: url('http://i309.photobucket.com/albums/kk380/206115540/irohikari/shiori-tsukasa_zps5a69d022.png') !important;}
+#list_surround table.header_cw::before {background-image: url('images/shiori-shinku.png') !important;}
+#list_surround table.header_completed::before {background-image: url('images/shiori-kana.png') !important;}
+#list_surround table.header_onhold::before {background-image: url('images/shiori-mio.png') !important;}
+#list_surround table.header_dropped::before {background-image: url('images/shiori-kyo.png') !important;}
+#list_surround table.header_ptw::before {background-image: url('images/shiori-tsukasa.png') !important;}
 
 .table_header, .td1, .td2 {padding: .3rem 0; position: relative; transition: background 1s ease;}
 .td1:nth-child(2), .td2:nth-child(2) {padding-right: 5rem;}
